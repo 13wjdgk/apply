@@ -1,0 +1,7 @@
+<form action="{% url 'create_apply'%}">
+    <p>이름:</p><input type="text" name="name">
+    <p>나이:</p><input type="text" name="age">
+    <p>성별:</p><input type="radio" value="woman" name="gender">여자<input type="radio" value="man" name="gender">남자
+    <p>지원 한마디:</p><textarea name="text"></textarea>
+    <input type="submit" value="제출">
+</form>

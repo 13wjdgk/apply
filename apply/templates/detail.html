@@ -1,0 +1,17 @@
+<div>
+    {{apply_detail.name}}
+    <br>
+    {{apply_detail.age}}
+    <br>
+    {{apply_detail.text}}
+    <br>
+    {% if apply_detail.gender %}
+        <p>여자</p>
+    {% else %}
+        <p>남자</p>
+    {% endif %}
+    <br>
+    {{apply_detail.pub_date}}
+
+</div>
+<a href="{% url 'main'%}">메인으로 가기</a>

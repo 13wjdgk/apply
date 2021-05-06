@@ -1,0 +1,12 @@
+{% for apply in apply.all %}
+
+<div>
+    <a href="{% url 'detail' apply.id %}"><h2>{{apply.name}}</h2></a>
+    
+</div>
+<br>
+<br>
+<br>
+
+{% endfor %}
+<a href="{% url 'create'%}">지원하기</a>
